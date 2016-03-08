@@ -1,0 +1,14 @@
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\TaidouDatabase.exe.config
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\TaidouDatabase.exe
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\TaidouDatabase.pdb
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\FluentNHibernate.dll
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\Iesi.Collections.dll
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\NHibernate.dll
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\FluentNHibernate.pdb
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\FluentNHibernate.xml
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\Iesi.Collections.xml
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\NHibernate.xml
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\obj\Debug\TaidouDatabase.csprojResolveAssemblyReference.cache
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\obj\Debug\TaidouDatabase.exe
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\obj\Debug\TaidouDatabase.pdb
+E:\c#_project\PhotonWorkspace\TaidouDatabase\TaidouDatabase\bin\Debug\MySql.Data.dll
