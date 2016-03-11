@@ -16,6 +16,7 @@ namespace TaidouDatabase.Manager
                 using (var transaction = session.BeginTransaction())
                 {
                     var userlist = session.QueryOver<TestUser>();
+                    transaction.Commit();
                     return userlist.List();
                 }
             }
@@ -28,9 +29,48 @@ namespace TaidouDatabase.Manager
                 using (var transaction = session.BeginTransaction())
                 {
                     var userlist = session.QueryOver<TestUser>().Where( user => user.Username == username);
+                    transaction.Commit();
                     return userlist.List();
                 }
             }
+        }
+
+        public void SaveUser(TestUser user)
+        {
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    session.Save(user);
+                    transaction.Commit();
+                }
+            }
+        }
+
+        public void DeleteById(int id)
+        {
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    TestUser tu = new TestUser();
+                    tu.Id = id;
+                    session.Delete(tu);
+                    transaction.Commit();
+                }
+            }  
+        }
+
+        public void UpdateUser(TestUser tu)
+        {
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    session.Update(tu);
+                    transaction.Commit();
+                }
+            }  
         }
         static void Main(string[] args)
         {
@@ -46,6 +86,21 @@ namespace TaidouDatabase.Manager
             {
                 Console.WriteLine("username = " + testUser.Username);
             }
+
+            Console.WriteLine("-----------save");
+            TestUser tu2 = new TestUser();
+            tu2.Username = "taikr";
+            tu2.Password = "111111";
+            tu2.Age = 16;
+//            testUserManager.SaveUser(tu2);
+
+            Console.WriteLine("-----------delete");
+            //            testUserManager.DeleteById(3);
+
+            Console.WriteLine("-----------update");
+            TestUser tu3 = testuserList[0];
+            tu3.Age = 44;
+            testUserManager.UpdateUser(tu3);
             Console.ReadKey();
         }
     }
